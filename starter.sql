@@ -1,11 +1,16 @@
-SET SERVEROUTPUT ON
-DECLARE
-    marks NUMBER := 65;
+DELIMITER//
+CREATE PROCEDURE check_marks()
 BEGIN
+    DECLARE marks INT DEFAULT 65;
+    
+
     IF marks >= 40 THEN
-        DBMS_OUTPUT.PUT_LINE('Student has Passed');
+       select'Student has Passed'
+AS result;
     ELSE
-        DBMS_OUTPUT.PUT_LINE('Student has Failed');
+      select'Student has Failed'
+AS result;        
     END IF;
-END;
-/
+END //
+DELIMTER;
+CALL check_marks();
