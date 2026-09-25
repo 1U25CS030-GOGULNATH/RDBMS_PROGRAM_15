@@ -1,16 +1,16 @@
-DELIMITER//
+
+
+DELIMITER //
+
 CREATE PROCEDURE check_marks()
 BEGIN
     DECLARE marks INT DEFAULT 65;
-    
 
-    IF marks >= 40 THEN
-       select'Student has Passed'
-AS result;
+    IF marks >= 50 THEN
+        SELECT 'PASS' AS Result;
     ELSE
-      select'Student has Failed'
-AS result;        
+        SELECT 'FAIL' AS Result;
     END IF;
 END //
-DELIMTER;
-CALL check_marks();
+
+DELIMITER ;
