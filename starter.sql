@@ -1,5 +1,3 @@
-
-
 DELIMITER //
 
 CREATE PROCEDURE check_marks()
@@ -14,3 +12,5 @@ BEGIN
 END //
 
 DELIMITER ;
+
+CALL check_marks();
