@@ -1,11 +1,11 @@
 SET SERVEROUTPUT ON;
 
 DECLARE
-    num1 NUMBER := 10;
-    num2 NUMBER := 20;
+    marks NUMBER := 10;
+    marks2 NUMBER := 20;
     total NUMBER;
 BEGIN
-    total := num1 + num2;
+    total := marks + marks2;
 
     DBMS_OUTPUT.PUT_LINE('Sum = ' || total);
 END;
