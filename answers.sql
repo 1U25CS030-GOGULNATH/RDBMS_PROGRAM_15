@@ -1,12 +1,12 @@
 SET SERVEROUTPUT ON;
 
 DECLARE
-    marks NUMBER := 10;
-    marks2 NUMBER := 20;
-    total NUMBER;
+    marks NUMBER := 65;
 BEGIN
-    total := marks + marks2;
-
-    DBMS_OUTPUT.PUT_LINE('Sum = ' || total);
+    IF marks >= 50 THEN
+        DBMS_OUTPUT.PUT_LINE('PASS');
+    ELSE
+        DBMS_OUTPUT.PUT_LINE('FAIL');
+    END IF;
 END;
 /
